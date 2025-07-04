@@ -1,0 +1,53 @@
+/*
+Name: 			index.css
+Written by: 	Lavrinenko Aleksandr
+Theme Version:	1.0
+*/
+
+
+// COMMON IMPORTS
+@import "config/imports";
+
+// HELPERS
+@import "base/helpers";
+
+// BASE
+@import "base/base";
+
+
+// header
+@import "base/header";
+
+
+// Top Section Index CSS
+@import "components/top-section";
+
+
+// Excursions CSS
+@import "components/excursions";
+
+// Events-Poster CSS
+@import "components/events-poster";
+
+// Whats Views CSS 
+@import "components/whats-views";
+
+// More-of-City CSS 
+@import "components/more-of-city";
+
+// Last News CSS 
+@import "components/last-news";
+
+// Officials CSS 
+@import "components/officials-news";
+
+// Follow-Us CSS 
+@import "components/follow-us";
+
+.top-section+.excursions {
+    margin-top: 22px;
+    padding-top: 0
+}
+
+// footer
+@import "base/footer";

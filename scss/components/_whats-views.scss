@@ -1,0 +1,68 @@
+.whats-views {
+    .slider-wrapper {
+        margin-top: 60px;
+
+        @media screen {
+            @media (max-width: 1199px) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .slider-container-views {
+        margin: -30px;
+        padding: 30px;
+
+        @media screen {
+            @media (min-width: 1200px) {
+                .swiper-slide:not(.swiper-slide-active) .slider-slide {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+
+            @media (max-width: 1199px) {
+                margin: -30px -40px;
+                padding: 30px 40px;
+
+                .swiper-slide {
+                    width: auto !important;
+                }
+            }
+
+            @media (max-width: 767px) {
+                margin: -30px -20px;
+                padding: 30px 20px;
+            }
+        }
+
+
+
+    }
+
+    .slider-slide {
+        gap: 20px;
+        transition: $transition;
+
+        @media screen {
+            @media (max-width: 1199px) {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+
+    // whats-views-item CSS 
+    @import "whats-views-items";
+
+    .btn-wrapper {
+        @include flex-block;
+        justify-content: center;
+        margin-top: 60px;
+
+        @media screen {
+            @media (max-width: 767px) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

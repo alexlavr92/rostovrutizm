@@ -1,0 +1,286 @@
+.jquery-modal.blocker {
+    z-index: 10;
+
+
+    .modal {
+        width: 90%;
+        max-width: 1300px;
+        padding: 90px 30px;
+        padding-top: 100px;
+        border-radius: 40px;
+        background: #EFEEEE;
+        box-shadow: none;
+
+        a.close-modal {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-image: url('../media/whats-view/week/modal-close.svg');
+            top: 30px;
+            right: 30px;
+        }
+    }
+
+    .modal-wrapper {
+        // align-items: center;
+
+        .slider-wrapper {
+            width: 55%;
+            position: relative;
+
+            .swiper-container,
+            .swiper-wrapper,
+            .swiper-slide,
+            .swiper-lazy {
+                height: 100%;
+                width: 100%;
+            }
+
+            .swiper-container {
+                margin: -30px -20px;
+                padding: 30px 20px;
+                width: calc(100% + 40px);
+                height: calc(100% + 60px);
+            }
+
+            // .swiper-slide {
+            //     border-radius: 20px;
+            //     overflow: hidden;
+            //     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+            // }
+
+
+            .swiper-lazy {
+                border-radius: 20px;
+                overflow: hidden;
+
+                @include bg-style;
+                min-height: 446px;
+            }
+
+            .swiper-slide.swiper-slide-visible {
+                .swiper-lazy {
+                    box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.2);
+                }
+            }
+
+            .swiper-button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $color-second;
+                box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15);
+                background-position: center;
+                @include bg-style;
+                background-size: 30%;
+                margin-top: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &.swiper-button-prev {
+                    background-image: url('../media/whats-view/week/arrow-prev.svg');
+                    left: 20px;
+                }
+
+                &.swiper-button-next {
+                    background-image: url('../media/whats-view/week/arrow-next.svg');
+                    // transform: rotate(180deg);
+                    right: 20px;
+
+                }
+            }
+        }
+
+        .modal-attracion_descript {
+            flex: 1;
+            min-width: 0;
+            @include flex-column;
+            padding-left: 30px;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .title {
+                font-weight: 700;
+                font-size: 2rem;
+                padding-bottom: 30px;
+                line-height: 125%;
+            }
+
+            .contancts {
+                align-items: center;
+                gap: 30px;
+                // color: #939393;
+                font-size: .8rem;
+
+                .contact {
+                    @include flex-block;
+                    align-items: center;
+                    gap: 10px;
+                    color: #939393;
+                }
+            }
+
+            .text {
+                padding-top: 30px;
+                font-weight: 400;
+                font-size: .8rem;
+                line-height: 120%;
+            }
+
+            .btns-wrapper {
+                margin-top: 30px;
+                gap: 30px;
+                align-items: center;
+            }
+
+            .btn-modal {
+                // margin-top: 30px;
+
+                transition: $transition;
+                color: $color-main;
+                font-size: .8rem;
+                font-weight: 500;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+                border: 1px solid transparent;
+                border-radius: 50px;
+                // display: inline-block;
+
+                @media screen and (min-width: 1200px) {
+                    padding: 18px 0;
+
+                    &:hover {
+                        border-color: $color-main;
+                        padding: 18px 20px 18px 30px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen {
+        @media (max-width: 1199px) {
+            padding: 0;
+
+            .modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100vh;
+                overflow: auto;
+                border-radius: 0;
+                width: 100%;
+                padding: 90px 40px;
+                padding-top: 120px;
+            }
+
+            .modal-wrapper {
+                @include flex-column;
+                gap: 30px;
+
+                .slider-wrapper {
+                    width: 100%;
+
+                    .swiper-container {
+                        width: calc(100% + 80px);
+                        margin: -30px -40px;
+                        padding: 30px 40px;
+                        height: auto;
+                    }
+
+                    .swiper-lazy {
+                        height: 60vw;
+                        min-height: auto;
+                    }
+
+                }
+
+                .modal-attracion_descript {
+                    padding-left: 0;
+
+                    .contancts,
+                    .text,
+                    .btn-modal {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+
+        }
+
+        @media (max-width: 767px) {
+            .modal {
+                padding: 50px 20px;
+
+                a.close-modal {
+                    width: 28px;
+                    height: 28px;
+                    top: 10px;
+                    right: 20px;
+                    z-index: 1;
+                }
+            }
+
+            .modal-wrapper {
+
+                .slider-wrapper {
+                    .swiper-container {
+                        width: calc(100% + 40px);
+                        margin: -30px -20px;
+                        padding: 30px 20px;
+                        height: auto;
+                    }
+
+                    .swiper-lazy {
+                        height: 60vw;
+                        min-height: auto;
+                    }
+
+                    .swiper-button {
+                        width: 28px;
+                        height: 28px;
+
+                        &.swiper-button-next {
+                            right: 8px;
+                        }
+
+                        &.swiper-button-prev {
+                            left: 8px;
+                        }
+                    }
+
+                }
+
+                .modal-attracion_descript {
+                    padding-left: 0;
+
+                    .title {
+                        font-size: 1.8rem;
+                        padding-bottom: 15px;
+
+                    }
+
+                    .contancts {
+                        @include flex-column;
+                        gap: 15px;
+                    }
+
+                    .text {
+                        padding-top: 15px;
+                    }
+
+                    .btns-wrapper {
+                        @include flex-column;
+                        gap: 30px;
+                        align-items: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

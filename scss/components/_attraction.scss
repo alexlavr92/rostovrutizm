@@ -1,0 +1,131 @@
+.oneday-attraction {
+    padding: 60px 0;
+    border-top: 2px solid #D1D1D1;
+
+
+    @media screen {
+        @media (min-width: 1200px) {
+            position: sticky;
+            top: 150px;
+            background: $color-bg;
+            transition: all 1s linear;
+
+            &:hover {
+                background: $color-second;
+
+            }
+        }
+
+        @media (max-width: 767px) {
+            padding: 30px 0;
+        }
+    }
+
+    // &:last-child {
+    //     padding-bottom: 0;
+    // }
+
+
+
+    .img-wrapper {
+        width: 50%;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.2);
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        @media screen {
+            @media (max-width: 1199px) {
+                width: 100%;
+                order: -1;
+            }
+        }
+    }
+
+    .flex-block:not(.attraction-link) {
+        align-items: center;
+        gap: 6vw;
+
+        @media screen {
+            @media (max-width: 1199px) {
+                @include flex-column;
+                gap: 3vw;
+            }
+        }
+    }
+
+    .descript {
+        flex: 1;
+        min-width: 0;
+        @include flex-block;
+        @include flex-column;
+
+
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 120%;
+        padding-bottom: 30px;
+        width: 100%;
+
+        @media (max-width: 1199px) {
+            padding-bottom: 15px;
+        }
+    }
+
+    .text {
+        font-size: .8rem;
+        line-height: 120%;
+        width: 100%;
+
+        @media screen {
+            @media (max-width: 1199px) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .attraction-link {
+        margin-top: 30px;
+
+        transition: $transition;
+        color: $color-main;
+        font-size: 1rem;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        // display: inline-block;
+
+        @media screen {
+            @media (min-width: 1200px) {
+                padding: 18px 0;
+
+                &:hover {
+                    border-color: $color-main;
+                    padding: 18px 20px 18px 30px;
+
+                }
+            }
+        }
+
+    }
+}
+
+.theme-night .oneday-attraction {
+    .attraction-link {
+        color: $color-second;
+
+        &:hover {
+            border-color: $color-second;
+            // padding: 18px 20px 18px 30px;
+        }
+    }
+}

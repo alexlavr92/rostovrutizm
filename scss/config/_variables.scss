@@ -1,0 +1,33 @@
+// TYPOGRAPHY
+// ---------------------------------------------------------------
+$font-main: "Gilroy";
+$font-normal: normal;
+// $font-tertiary: "Oswald", sans-serif;
+
+$min-font-size: 14;
+$max-font-size: 24;
+// $root-font-size: 16;
+$body-font-size: calcFluidFontSize($min-font-size, $max-font-size, 320, 1920, px);
+$body-line-height: 140;
+
+
+// COLORS
+$color-bg: #EFEEEE;
+
+$color-main: #000000;
+$color-second: #ffffff;
+$color-hover-blue: #00A0E3;
+$bg-btn-black: #151515;
+$color-black-text: #151515;
+// ---------------------------------------------------------------
+
+$placeholder-color: rgba(29, 36, 42, 0.7);
+
+// Animation
+// ---------------------------------------------------------------
+
+$transition: all .4s ease;
+$top-slider-duration: 2s;
+
+// Box Sizing
+$box-border: border-box;

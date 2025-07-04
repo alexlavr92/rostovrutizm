@@ -1,0 +1,68 @@
+/*
+Name: 			innner-page.css
+Written by: 	Lavrinenko Aleksandr
+Theme Version:	1.0
+*/
+
+
+// COMMON IMPORTS
+@import "config/imports";
+
+// HELPERS
+@import "base/helpers";
+
+// BASE
+@import "base/base";
+
+
+// header
+@import "base/header";
+
+
+// Whats Views CSS 
+@import "components/whats-views-items";
+
+.inner-page main {
+    margin-bottom: 80px;
+
+    @media screen {
+        @media (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
+
+        // @media (max-width: 767px) {
+        //     margin-bottom: 0;
+        // }
+    }
+}
+
+.inner-page h1 {
+    font-size: 2.7rem;
+    flex: 1;
+    min-width: 0;
+
+    &.with-yellow>span {
+        color: #E99F31;
+    }
+}
+
+.inner-page .whats-views_item {
+    @media screen {
+        @media (max-width: 1199px) {
+            width: calc(50% - 10px);
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    .slider-slide-bg {
+        @media screen and (max-width: 767px) {
+            height: 52vw;
+        }
+    }
+}
+
+// footer
+@import "base/footer";
