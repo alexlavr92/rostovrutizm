@@ -2188,8 +2188,7 @@ header.open .header-mob-burger > span:after {
 }
 @media screen and (max-width: 767px) {
   .tabs-section .tags-wrapper {
-    padding: 0 20px;
-    padding-bottom: 5px;
+    padding: 2px 20px;
   }
 }
 .tabs-section .tabs-contents {
@@ -3382,12 +3381,14 @@ header.open .header-mob-burger > span:after {
   }
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript {
     padding-left: 0;
-    padding-bottom: 90px;
   }
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript .contancts,
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript .text,
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript .btn-modal {
     font-size: 1rem;
+  }
+  .jquery-modal.blocker .modal-wrapper .modal-attracion_descript > *:last-child {
+    padding-bottom: 90px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -3424,7 +3425,6 @@ header.open .header-mob-burger > span:after {
   }
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript {
     padding-left: 0;
-    padding-bottom: 50px;
   }
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript .title {
     font-size: 1.8rem;
@@ -3462,6 +3462,9 @@ header.open .header-mob-burger > span:after {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+  }
+  .jquery-modal.blocker .modal-wrapper .modal-attracion_descript > *:last-child {
+    padding-bottom: 50px;
   }
 }
 

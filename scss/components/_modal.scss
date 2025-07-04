@@ -202,12 +202,16 @@
 
                 .modal-attracion_descript {
                     padding-left: 0;
-                    padding-bottom: 90px;
+
 
                     .contancts,
                     .text,
                     .btn-modal {
                         font-size: 1rem;
+                    }
+
+                    >*:last-child {
+                        padding-bottom: 90px;
                     }
                 }
             }
@@ -262,7 +266,7 @@
 
                 .modal-attracion_descript {
                     padding-left: 0;
-                    padding-bottom: 50px;
+                    // padding-bottom: 50px;
 
                     .title {
                         font-size: 1.8rem;
@@ -284,6 +288,10 @@
                         gap: 30px;
                         align-items: center;
                         width: 100%;
+                    }
+
+                    >*:last-child {
+                        padding-bottom: 50px;
                     }
                 }
             }
