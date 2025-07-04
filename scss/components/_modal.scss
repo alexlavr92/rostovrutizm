@@ -181,7 +181,7 @@
             .modal-wrapper {
                 @include flex-column;
                 gap: 30px;
-                padding-bottom: 90px;
+                // padding-bottom: 90px;
 
                 .slider-wrapper {
                     width: 100%;
@@ -202,6 +202,7 @@
 
                 .modal-attracion_descript {
                     padding-left: 0;
+                    padding-bottom: 90px;
 
                     .contancts,
                     .text,
@@ -230,7 +231,6 @@
             }
 
             .modal-wrapper {
-                padding-bottom: 50px;
 
                 .slider-wrapper {
                     .swiper-container {
@@ -262,6 +262,7 @@
 
                 .modal-attracion_descript {
                     padding-left: 0;
+                    padding-bottom: 50px;
 
                     .title {
                         font-size: 1.8rem;
