@@ -3351,7 +3351,6 @@ header.open .header-mob-burger > span:after {
     width: 100%;
     padding: 90px 40px;
     padding-top: 120px;
-    padding-bottom: 0;
   }
   .jquery-modal.blocker .modal-wrapper {
     -webkit-box-orient: vertical;
@@ -3387,14 +3386,10 @@ header.open .header-mob-burger > span:after {
   .jquery-modal.blocker .modal-wrapper .modal-attracion_descript .btn-modal {
     font-size: 1rem;
   }
-  .jquery-modal.blocker .modal-wrapper .modal-attracion_descript > *:last-child {
-    padding-bottom: 90px;
-  }
 }
 @media screen and (max-width: 767px) {
   .jquery-modal.blocker .modal {
     padding: 50px 20px;
-    padding-bottom: 0;
   }
   .jquery-modal.blocker .modal a.close-modal {
     width: 28px;
@@ -3462,9 +3457,6 @@ header.open .header-mob-burger > span:after {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-  }
-  .jquery-modal.blocker .modal-wrapper .modal-attracion_descript > *:last-child {
-    padding-bottom: 50px;
   }
 }
 
