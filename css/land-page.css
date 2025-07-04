@@ -1980,7 +1980,7 @@ header.open .header-mob-burger > span:after {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 }
 .tabs-section .tabs-wrapper .switcher-elem {
