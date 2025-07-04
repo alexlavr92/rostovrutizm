@@ -175,11 +175,13 @@
                 width: 100%;
                 padding: 90px 40px;
                 padding-top: 120px;
+                padding-bottom: 0
             }
 
             .modal-wrapper {
                 @include flex-column;
                 gap: 30px;
+                padding-bottom: 90px;
 
                 .slider-wrapper {
                     width: 100%;
@@ -215,6 +217,8 @@
         @media (max-width: 767px) {
             .modal {
                 padding: 50px 20px;
+                padding-bottom: 0;
+
 
                 a.close-modal {
                     width: 28px;
@@ -226,6 +230,7 @@
             }
 
             .modal-wrapper {
+                padding-bottom: 50px;
 
                 .slider-wrapper {
                     .swiper-container {
