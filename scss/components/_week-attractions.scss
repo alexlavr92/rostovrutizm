@@ -148,17 +148,18 @@
                 }
             }
 
-            @media screen and (min-width: 1200px) {
-                &:hover {
-                    background: $color-second;
-                    box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.15);
+            // @media screen and (min-width: 1200px) {
+            &:hover {
+                background: $color-second;
+                box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.15);
 
-                    .img-wrapper {
-                        box-shadow: none !important;
-                        transform: scale(.95);
-                    }
+                .img-wrapper {
+                    box-shadow: none !important;
+                    transform: scale(.95);
                 }
             }
+
+            // }
         }
 
         .img-wrapper {
