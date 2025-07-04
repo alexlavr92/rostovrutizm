@@ -2189,6 +2189,7 @@ header.open .header-mob-burger > span:after {
 @media screen and (max-width: 767px) {
   .tabs-section .tags-wrapper {
     padding: 0 20px;
+    padding-bottom: 5px;
   }
 }
 .tabs-section .tabs-contents {
@@ -3351,6 +3352,7 @@ header.open .header-mob-burger > span:after {
     width: 100%;
     padding: 90px 40px;
     padding-top: 120px;
+    padding-bottom: 0;
   }
   .jquery-modal.blocker .modal-wrapper {
     -webkit-box-orient: vertical;
@@ -3364,6 +3366,7 @@ header.open .header-mob-burger > span:after {
         -ms-flex-pack: start;
             justify-content: flex-start;
     gap: 30px;
+    padding-bottom: 90px;
   }
   .jquery-modal.blocker .modal-wrapper .slider-wrapper {
     width: 100%;
@@ -3390,6 +3393,7 @@ header.open .header-mob-burger > span:after {
 @media screen and (max-width: 767px) {
   .jquery-modal.blocker .modal {
     padding: 50px 20px;
+    padding-bottom: 0;
   }
   .jquery-modal.blocker .modal a.close-modal {
     width: 28px;
@@ -3397,6 +3401,9 @@ header.open .header-mob-burger > span:after {
     top: 10px;
     right: 20px;
     z-index: 1;
+  }
+  .jquery-modal.blocker .modal-wrapper {
+    padding-bottom: 50px;
   }
   .jquery-modal.blocker .modal-wrapper .slider-wrapper .swiper-container {
     width: calc(100% + 40px);
