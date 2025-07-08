@@ -6,6 +6,7 @@
 jQuery(document).ready(function ($) {
 
 
+
     const DayNNight = {
         defaultOptions: {
             switherTheme: $('.switcher-theme'),
@@ -71,6 +72,15 @@ jQuery(document).ready(function ($) {
     }
     if ($('.land-page .tabs-section').length)
         StickyTabs.init()
+
+    function ScrollTop() {
+        window.scrollTo(0, 0)
+        AOS.refresh();
+    }
+    if ($(windos).scrollTop() > 0) {
+        ScrollTop()
+    }
+
 
 
 
