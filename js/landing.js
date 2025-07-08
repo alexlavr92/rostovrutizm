@@ -4,16 +4,6 @@
 
 
 jQuery(document).ready(function ($) {
-    function ScrollTop() {
-        const timeout = 300
-        setTimeout(() => {
-            window.scrollTo(0, 0)
-            AOS.refresh();
-        }, timeout)
-    }
-    if ($(window).scrollTop() > 0) {
-        ScrollTop()
-    }
 
 
     const DayNNight = {
@@ -549,5 +539,16 @@ $(window).on('load', function () {
 
             shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
+    }
+
+    function ScrollTop() {
+        const timeout = 1
+        setTimeout(() => {
+            window.scrollTo(0, 0)
+            AOS.refresh();
+        }, timeout)
+    }
+    if ($(window).scrollTop() > 0) {
+        ScrollTop()
     }
 }); // jquery window onload end
