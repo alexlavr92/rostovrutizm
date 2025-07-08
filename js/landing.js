@@ -74,8 +74,11 @@ jQuery(document).ready(function ($) {
         StickyTabs.init()
 
     function ScrollTop() {
-        window.scrollTo(0, 0)
-        AOS.refresh();
+        const timeout = 250
+        setTimeout(() => {
+            window.scrollTo(0, 0)
+            AOS.refresh();
+        }, timeout)
     }
     if ($(window).scrollTop() > 0) {
         ScrollTop()
