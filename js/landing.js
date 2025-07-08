@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
         window.scrollTo(0, 0)
         AOS.refresh();
     }
-    if ($(windos).scrollTop() > 0) {
+    if ($(window).scrollTop() > 0) {
         ScrollTop()
     }
 
