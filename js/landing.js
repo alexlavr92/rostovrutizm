@@ -542,7 +542,7 @@ $(window).on('load', function () {
     }
 
     function ScrollTop() {
-        const timeout = 1
+        const timeout = 200
         setTimeout(() => {
             window.scrollTo(0, 0)
             AOS.refresh();
