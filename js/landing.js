@@ -4,7 +4,16 @@
 
 
 jQuery(document).ready(function ($) {
-
+    function ScrollTop() {
+        const timeout = 300
+        setTimeout(() => {
+            window.scrollTo(0, 0)
+            AOS.refresh();
+        }, timeout)
+    }
+    if ($(window).scrollTop() > 0) {
+        ScrollTop()
+    }
 
 
     const DayNNight = {
@@ -73,16 +82,7 @@ jQuery(document).ready(function ($) {
     if ($('.land-page .tabs-section').length)
         StickyTabs.init()
 
-    function ScrollTop() {
-        const timeout = 250
-        setTimeout(() => {
-            window.scrollTo(0, 0)
-            AOS.refresh();
-        }, timeout)
-    }
-    if ($(window).scrollTop() > 0) {
-        ScrollTop()
-    }
+
 
 
 
